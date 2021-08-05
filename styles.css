@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: radial-gradient(#ffee99, #ffe566);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
