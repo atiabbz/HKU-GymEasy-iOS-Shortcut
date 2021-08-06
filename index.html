@@ -18,6 +18,7 @@
           <span class="float-left">
             <img src="./images/icon.png" alt="icon" class="d-inline-block" style="height: 1em;">
             HKU GymEasy
+            <span class="fw-bold" style="font-size: small;">iOS/iPadOS</span>
           </span>
         </p>
       </a>
@@ -29,11 +30,11 @@
       <span class="align-middle">
         Frictionless gym bookings at HKU.
       </span>
-      <a href="#" class="btn btn-sm btn-dark font-monospace">Get</a>
+      <a href="shortcuts://shortcuts/295a40fe879d4511a7c69a8ad7fb3643" class="btn btn-sm btn-dark font-monospace">Get</a>
     </p>
 
-    <div class="text-center">
-      <img id="image" src="./images/allow-untrusted-shortcuts.png" class="" style="height: 60vh; width: auto ;" alt="">
+    <div id="pagination" class="text-center">
+      <img id="image" src="./images/allow-untrusted-shortcuts.png" class="" style="height: 60vh; width: auto ;" alt="screenshot">
       <p>
         <div class="btn-group font-monospace">
           <button type="button" id="prev" class="btn btn-sm btn-outline-dark disabled">Prev</button>
@@ -56,8 +57,66 @@
           for help in case of issues (especially if you're new to Shortcuts).</li>
       </ul>
     </div>
-    <p class="fw-bold">Footer</p>
+
+    <hr>
+
+    <div id="payment" class="alert alert-warning d-flex justify-content-center">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body d-flex align-items-center">
+              <span>
+                <h5 class="card-title">Protein 🍳</h5>
+                <p class="card-text">
+                  I made GymEasy to streamline the cumbersome process of gym session bookings at HKU.
+                  <br>
+                  If you find it useful, please consider adding to my protein fund!
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <a href="https://payme.hsbc/atiabbz" target="_blank">
+              <img src="./images/hsbcpayme.png" class="card-img-top" alt="hsbcpayme">
+            </a>
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <span class="font-monospace">→&nbsp;</span>
+              <a href="https://payme.hsbc/atiabbz" target="_blank" class="btn btn-danger">
+                HSBC PayMe
+              </a>
+              <span class="font-monospace">&nbsp;←</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <a href="https://qr.alipay.hk/28100401012kfekjs4lin5lx86" target="_blank">
+              <img src="./images/alipayhk.png" class="card-img-top" alt="alipayhk">
+            </a>
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <span class="font-monospace">→&nbsp;</span>
+              <a href="https://qr.alipay.hk/28100401012kfekjs4lin5lx86" target="_blank" class="btn btn-primary">
+                AlipayHK
+              </a>
+              <span class="font-monospace">&nbsp;←</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="footer" style="font-size: small;">
+      <!-- Add CWS badge link here as well -->
+      <a class="link-dark fw-bold text-decoration-none" target="_blank" href="https://fcbooking.cse.hku.hk/">
+        Go to sign up platform
+      </a>
+    </p>
   </div>
+  &nbsp;
 </body>
 <script src="./script.js"></script>
 </html>
