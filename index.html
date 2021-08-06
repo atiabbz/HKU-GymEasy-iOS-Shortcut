@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./icon.png">
+  <link rel="icon" href="./images/icon.png">
   <link rel="stylesheet" href="./styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <title>HKU GymEasy | iOS/iPadOS</title>
@@ -16,7 +16,7 @@
       <a class="link-dark text-decoration-none" href="#">
         <p class="display-1">
           <span class="float-left">
-            <img src="./icon.png" alt="icon" class="d-inline-block" style="height: 1em;">
+            <img src="./images/icon.png" alt="icon" class="d-inline-block" style="height: 1em;">
             HKU GymEasy
           </span>
         </p>
@@ -33,17 +33,19 @@
     </p>
 
     <div class="text-center">
-      <img src="./1. untrusted shortcuts.png" class="" style="height: 60vh; width: auto ;" alt="">
+      <img id="image" src="./images/allow-untrusted-shortcuts.png" class="" style="height: 60vh; width: auto ;" alt="">
       <p>
         <div class="btn-group font-monospace">
-          <button type="button" class="btn btn-sm btn-outline-dark">Prev</button>
-          <button type="button" class="btn btn-sm btn-outline-dark">Next</button>
+          <button type="button" id="prev" class="btn btn-sm btn-outline-dark disabled">Prev</button>
+          <button type="button" id="pageNum" class="btn btn-sm btn-outline-dark disabled">1</button>
+          <button type="button" id="next" class="btn btn-sm btn-outline-dark">Next</button>
         </div>
       </p>
     </div>
-    <p>
-      <h5>1. Allow Untrusted Shortcuts</h5>
-      <ul>
+
+    <div id="text">
+      <h5 id="heading">Allow Untrusted Shortcuts</h5>
+      <ul id="bullets">
         <li>Make sure you have untrusted shortcuts allowed in the Settings app.</li>
         <li>
           See <a
@@ -51,9 +53,11 @@
             target="_blank"
             class="link-dark"
           >here</a>
-          for help in case of issues.</li>
+          for help in case of issues (especially if you're new to Shortcuts).</li>
       </ul>
-    </p>
+    </div>
+    <p class="fw-bold">Footer</p>
   </div>
 </body>
+<script src="./script.js"></script>
 </html>
