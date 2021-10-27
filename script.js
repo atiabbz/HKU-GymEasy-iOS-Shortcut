@@ -65,16 +65,7 @@ document.querySelector("#next").onclick = () => {
     if (newPageNum === pages.length) {
       document.querySelector("#next").classList.add("disabled");
     }
-    document.querySelector("#pageNum").innerHTML = newPageNum.toString();
-    const page = pages[index];
-    document.querySelector("#image").src = page.filename;
-    document.querySelector("#heading").innerHTML = page.heading;
-    document.querySelector("#bullets").innerHTML = "";
-    for (let bullet of page.bullets) {
-      const li = document.createElement("li");
-      li.innerHTML = bullet;
-      document.querySelector("#bullets").appendChild(li);
-    }
+    updatePageElements(newPageNum, index);
   } else {
     document.querySelector("#next").classList.add("disabled");
   }
@@ -88,17 +79,21 @@ document.querySelector("#prev").onclick = () => {
     if (newPageNum === 1) {
       document.querySelector("#prev").classList.add("disabled");
     }
-    document.querySelector("#pageNum").innerHTML = newPageNum.toString();
-    const page = pages[index];
-    document.querySelector("#image").src = page.filename;
-    document.querySelector("#heading").innerHTML = page.heading;
-    document.querySelector("#bullets").innerHTML = "";
-    for (let bullet of page.bullets) {
-      const li = document.createElement("li");
-      li.innerHTML = bullet;
-      document.querySelector("#bullets").appendChild(li);
-    }
+    updatePageElements(newPageNum, index);
   } else {
     document.querySelector("#prev").classList.add("disabled");
   }
 };
+
+function updatePageElements(newPageNum, index) {
+  document.querySelector("#pageNum").innerHTML = newPageNum.toString();
+  const page = pages[index];
+  document.querySelector("#image").src = page.filename;
+  document.querySelector("#heading").innerHTML = page.heading;
+  document.querySelector("#bullets").innerHTML = "";
+  for (let bullet of page.bullets) {
+    const li = document.createElement("li");
+    li.innerHTML = bullet;
+    document.querySelector("#bullets").appendChild(li);
+  }
+}
