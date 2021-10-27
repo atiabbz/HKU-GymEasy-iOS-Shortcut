@@ -2,6 +2,8 @@
 
 ## Frictionless gym bookings at HKU
 
+[https://atiabbz.github.io/hku-gymeasy-ios](https://atiabbz.github.io/hku-gymeasy-ios)
+
 If you, like me, find the gym session booking process at HKU cumbersome, GymEasy is the Shortcut for you.
 
 **Also available on the [Google Chrome Webstore](https://chrome.google.com/webstore/detail/hku-gymeasy/ekfkohgplfimgmggommbcgeoeniojbkc)**
