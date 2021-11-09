@@ -14,3 +14,4 @@ Features:
 
 - Automatically have your responses be filled in the booking form and scroll down to the reCAPTCHA section.
 - Highlight the time selection section if one is not selected.
+- Have a scroll-to-top button in the bottom-right corner.
